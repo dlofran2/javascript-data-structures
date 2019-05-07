@@ -1,0 +1,32 @@
+{
+  "name": "javascript-data-structures",
+  "version": "1.0.0",
+  "description": "Common data structures created in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlofran2/javascript-data-structures.git"
+  },
+  "keywords": [
+    "data",
+    "structure",
+    "javascript"
+  ],
+  "author": "Dominic Lofrano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlofran2/javascript-data-structures/issues"
+  },
+  "homepage": "https://github.com/dlofran2/javascript-data-structures#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2"
+  }
+}

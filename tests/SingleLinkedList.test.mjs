@@ -1,6 +1,6 @@
-import SingleLinkedList from "./SingleLinkedList.mjs";
+import SingleLinkedList from "./SingleLinkedList/SingleLinkedList.mjs";
 import { CANNOT_FIND_EMPTY, INVALID_INDEX_NEGATIVE, INVALID_INDEX_OUTSIDE, INVALID_ADD_OUTSIDE, INVALID_ADD_NEGATIVE, INVALID_DELETE_NEGATIVE, INVALID_DELETE_OUTSIDE } from "./constants.mjs";
-import { runTest, summarizeTests, testErrorHandling } from "./testHelpers.mjs";
+import { runTest, summarizeTests, testErrorHandling } from "./utils/testHelpers.mjs";
 
 let testArr = [];
 
