@@ -1,0 +1,9 @@
+/.vscode
+/node_modules
+/src
+/lib/tests
+.babelrc
+.gitignore
+babel.config.js
+yarn.lock
+*.log

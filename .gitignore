@@ -1,4 +1,5 @@
 /.vscode
 /node_modules
-/build
+/lib
 yarn.lock
+*.log
