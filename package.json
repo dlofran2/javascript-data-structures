@@ -4,8 +4,7 @@
   "description": "Common data structures created in Javascript",
   "main": "./lib/index.js",
   "scripts": {
-    "run": "npx babel-node ./src/tests/SingleLinkedList.test.js",
-    "test": "clear && npx babel-node ./src/tests/SingleLinkedList.test.js ",
+    "test": "jest --coverage",
     "build": "./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
@@ -13,9 +12,10 @@
     "url": "git+https://github.com/dlofran2/javascript-data-structures.git"
   },
   "keywords": [
-    "data",
-    "structure",
-    "javascript"
+    "javascript",
+    "data structure",
+    "data structures",
+    "linked list"
   ],
   "author": "Dominic Lofrano",
   "license": "MIT",
@@ -23,12 +23,23 @@
     "url": "https://github.com/dlofran2/javascript-data-structures/issues"
   },
   "homepage": "https://github.com/dlofran2/javascript-data-structures#readme",
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.4",
     "babel-loader": "^8.0.5",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.8.0"
   }
 }
