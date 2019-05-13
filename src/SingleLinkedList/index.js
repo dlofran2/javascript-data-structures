@@ -13,12 +13,16 @@ export default class SingleLinkedList {
   }
 
   printList() {
-    let currentNode = this.head;
+    let currentNode = this.head,
+      arr = [];
 
     while (currentNode) {
-      console.log(currentNode.data);
+      console.log(`Data: ${currentNode.data}, Next: ${currentNode._next ? currentNode._next.data : currentNode._next}`);
+      arr.push(currentNode.data);
       currentNode = currentNode._next;
     }
+
+    return arr;
   }
 
   getDataAtPosition(x) {
@@ -135,7 +139,7 @@ export default class SingleLinkedList {
     }
 
     if (index === 0) {
-      this.deleteFront(value);
+      this.deleteFront(index);
       return;
     }
 
